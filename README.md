@@ -8,15 +8,15 @@
 
 ## Table of Contents
 - [Installation](#installation)
+- [Project Motivation](#motivation)
+- [Project Overview](#po)
 - [Project Details](#pd)
   - [Choose your Dataset](#choose)
   - [Explore](#explore)
   - [Document Story](#ds)
   - [Slide Deck](#sd)
   - [Submit](#submit)
-- [Project Overview](#po)
 - [Dataset](#dataset)
-- [Project Motivation](#motivation)
 - [Results](#results)
 - [Key Insights for Presentation](#kip)
 - [Why this project?](#p) 
@@ -29,6 +29,28 @@ This project uses Python 3 and is designed to be completed through the Jupyter N
 - Pandas
 - Matplotlib
 - Seaborn
+
+## Project Motivation <a name="motivation"></a>
+
+This is an Udacity Nanodegree project.I was interested in using Prosper Loan Data to better understand : </br>
+- Univariate Exploration:
+  - Loan status
+  - Employment Status
+  - Stated Monthly Income
+- Bivariate Exploration:
+  - Status and Prosper Rating
+  - Credit Start with Listing Category
+  - Loan Status and Loan Amount
+  - Prosper Rating and Employment Status
+- Multivariate Exploration:
+  - Rating, Loan Amount and Loan Status
+  - Credit category, Credit rating and outcome of Credit
+  - Amount, Listing Category Loan and Loan Status Interact
+  
+### Project Overview <a name="po"></a>
+
+This project has two parts that demonstrate the importance and value of data visualization techniques in the data analysis process. In the first part, you will use Python visualization libraries to systematically explore a selected dataset, starting from plots of single variables and building up to plots of multiple variables. In the second part, you will produce a short presentation that illustrates interesting properties, trends, and relationships that you discovered in your selected dataset. The primary method of conveying your findings will be through transforming your exploratory visualizations from the first part into polished, explanatory visualizations.
+
 
 ### Project Details <a name="pd"></a>
 
@@ -82,42 +104,46 @@ You might need to ask specific questions to prompt your reader. The following qu
 
 There’s one last thing to do before you submit your project. You should closely read the [project rubric](https://review.udacity.com/#!/projects/8ff9475b-3d6b-4c5b-9593-96794db62987/rubric).
 
-### Project Overview <a name="po"></a>
-
-This project has two parts that demonstrate the importance and value of data visualization techniques in the data analysis process. In the first part, you will use Python visualization libraries to systematically explore a selected dataset, starting from plots of single variables and building up to plots of multiple variables. In the second part, you will produce a short presentation that illustrates interesting properties, trends, and relationships that you discovered in your selected dataset. The primary method of conveying your findings will be through transforming your exploratory visualizations from the first part into polished, explanatory visualizations.
-
 
 ### Dataset <a name="dataset"></a>
 This data set contains information on peer to peer loans facilitated by credit company Prosper. There are 113,937 loans with 81 variables. For the purpose of this investigation I've taken the following variables: Term, LoanStatus, BorrowerRate, ProsperRating (Alpha), ListingCategory (numeric), EmploymentStatus, DelinquenciesLast7Years, StatedMonthlyIncome, TotalProsperLoans, LoanOriginalAmount, LoanOriginationDate, Recommendations and Investors.
 
-## Project Motivation <a name="motivation"></a>
-
-This is an Udacity Nanodegree project.I was interested in using Prosper Loan Data to better understand : </br>
-- Univariate Exploration:
-  - Loan status
-  - Employment Status
-  - Stated Monthly Income
-- Bivariate Exploration:
-  - Status and Prosper Rating
-  - Credit Start with Listing Category
-  - Loan Status and Loan Amount
-  - Prosper Rating and Employment Status
-- Multivariate Exploration:
-  - Rating, Loan Amount and Loan Status
-  - Credit category, Credit rating and outcome of Credit
-  - Amount, Listing Category Loan and Loan Status Interact
  
-
 ### Results <a name="results"></a>
 
 - Most of the loans in the data set are actually current loans. Past due loans are split in several groups based on the length of payment delay. Other big part is completed loans, defaulted loans compromise a minority, however chargedoff loans also comporomise a substanial amount.
+<p align = "center">
+  <img src="https://raw.githubusercontent.com/Abhishek20182/Communicate-Data-Findings/master/Result/Result-1.png">
+</p>
 - The majority of borrowers are employed and all other categories as small part of borrowers. In small Group full time has highest, after that self empolyed are there and so on.
+<p align = "center">
+  <img src="https://raw.githubusercontent.com/Abhishek20182/Communicate-Data-Findings/master/Result/Result-2.png">
+</p>
 - With a boundary of mean and 3 times standard deviations distribution of monthly income still has noticeable right skew but now we can see that mode is about 5000. 
+<p align = "center">
+  <img src="https://raw.githubusercontent.com/Abhishek20182/Communicate-Data-Findings/master/Result/Result-3.png">
+</p>
 - The most frequent rating among defaulted loans is actually D. And the most frequent rating among Completed is alsoDand second highest is A and so on in Status and Prosper Rating.
+<p align = "center">
+  <img src="https://raw.githubusercontent.com/Abhishek20182/Communicate-Data-Findings/master/Result/Result-4.png">
+</p>
 - In both of them Credit Start with Listing Category Graphs of the debt Consolidation have most frequency among all of them.
+<p align = "center">
+  <img src="https://raw.githubusercontent.com/Abhishek20182/Communicate-Data-Findings/master/Result/Result-5.png">
+  <img src="https://raw.githubusercontent.com/Abhishek20182/Communicate-Data-Findings/master/Result/Result-6.png">
+</p>
 - Lower ratings seem to have greater proportions of individuals with employment status Not Employed, Self-employed, Retired and Part-Time. 
+<p align = "center">
+  <img src="https://raw.githubusercontent.com/Abhishek20182/Communicate-Data-Findings/master/Result/Result-7.png">
+</p>
 - Except for the lowest ratings defaulted credits tend to be larger than completed. Most of the defaulted credits comes from individuals with low Prosper rating.
-- Except for Auto, Business and Home Improvemrnt dont have nearly equal mean amoong all of them. Business category tend to have larger amount.
+<p align = "center">
+  <img src="https://raw.githubusercontent.com/Abhishek20182/Communicate-Data-Findings/master/Result/Result-8.png">
+</p>
+- Except for Auto, Business and Home Improvemrnt dont have nearly equal mean amoong all of them. Business category tend to have larger amount.<p align = "center">
+  <img src="https://raw.githubusercontent.com/Abhishek20182/Communicate-Data-Findings/master/Result/Result-9.png">
+  <img src="https://raw.githubusercontent.com/Abhishek20182/Communicate-Data-Findings/master/Result/Result-10.png">
+</p>
 
 ## Key Insights for Presentation <a name="kip"></a>
 I've chosen key plots with high data-to-ink ratio for the presentation. The plots I've chosen shows distribution of main variables, Loan status, monthly income, Prosper rating and I've tried to tell a story what are major predictors for loan status and Prosper rating variables.
